@@ -21,7 +21,8 @@ namespace MyApp
 
         public void MakeDeposit(float amount)
         {
-            Balance += amount;
+            if(amount > 0)
+                Balance += amount;
         }
 
         public void MakeWithdrawal(float amount)
